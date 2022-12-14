@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+header{
+	background-color:#510B4E;
+	font-size:20px;
+	text-transform: full-width;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+#avatar{
+	background-color: #AF0E9F;
+}
+
+#questions{
+	background-color: #7B0C70;
+}
+/*he div that holds all the customization divs*/
+#builder{
+	postion: relative;
+	height: 572px;
+}
+/*nested divs where we are placing images - HAVE to be postion - they will stack up*/
+#face, #headwear, #body, #dresses, #boots{
+	position: absolute;
+}
+
+footer{
+	background-color: #510B4E;
+}

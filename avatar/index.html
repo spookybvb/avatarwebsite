@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<!--my CSS-->
+    <link href="css/avatar.css" rel="stylesheet" type="text/css">
+	
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script> 
+
+
+</head>
+<body>
+    
+    <header class="text-center text-white py-8">
+        <div class="container py-8">
+            <div class="row py-8">
+                <div class="col-sm-6 mx-auto py-5">
+                    <h1>Build your own anime character</h1>
+					<p>Pick some outfits you think would look good together and dress up this anime girl.You also get to change this anime girls face as well as her hair colour.</p>
+				</div>
+            </div>
+        </div>
+</header>
+
+    <section>
+		<div id="avatar">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>Selections</h2>
+					<!--this is where the thumbnail buttons will go-->
+					<button type="submit">
+					<p>Face</p>
+					<img onClick="setface('face1.png');" src="images/face1TH.png" alt="faceselection"><br>
+					<img onClick="setface('face2.png');" src="images/face2TH.png" alt="faceselection"><br>
+					</button>
+					<button type="submit">
+					<p>Headwear</p>
+					<img onClick="setheadwear('headwear1.png');"
+				    src="images/headwearTH1.png" alt="headwear1selection"><br>
+					<img onClick="setheadwear('headwear2.png');" src="images/headwearTH2.png" alt="headwear2seletion"><br>
+					</button>	
+					<button type="submit">
+					<p>Hair</p>
+                   <img onClick="setBody('avatarcreationbody1.png');" src="images/avatarcreationbody1TH.png" alt="bodySelection"><br>
+					<img onClick="setBody('avatarcreationbody2.png');" src="images/avatarcreationbody2TH.png" alt="bodySelection"><br>
+					<img onClick="setBody('avatarcreationbody3.png');" src="images/avatarcreationbody3TH.png" alt="bodySelection"><br>
+					</button>
+					<button type="submit">
+					<p>Dresses</p>
+				   <img onClick="setdresses('dress1.png');" src="images/dressTH1.png" alt="dresses1Section"><br>
+				   <img onClick="setdresses('dress2.png');" src="images/dressTH2.png" alt="dress2Section"><br>
+					<img onClick="setdresses('dress3.png');" src="images/dress3TH.png" alt="dress3Section"><br>
+					<img onClick="setdresses('dress4.png');" src="images/dress4TH.png" alt="dress4Section"><br>
+					</button>
+					<button type="submit">
+					<p>Boots</p>
+					<img onClick="setboots('boots1.png');" src="images/boots1TH.png" alt="boots1selection"><br>
+					<img onClick="setboots('boots2.png');" src="images/boots2TH.png" alt="boots2selection"><br>
+					</button>
+				</div>
+				
+				
+                <div class="col-sm-6">
+                    <h3>result</h3>
+                    <div id="builder">
+                        <!--order matters - first div is furthest from the view other divs are loaded on top-->
+						<div id="body"></div>
+                        <div id="face"></div>
+						<div id="headwear"></div>
+                        <div id="dresses"></div>
+						<div id="boots"></div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+    </section>
+	
+	<section>
+		<div id="questions">
+	<div class="container text-white">
+		<div class="row">
+		  <div class="col-sm-6">
+			  <h4>Learning Reflection</h4>
+			  <p>What moments were you most proud of your efforts in this course? Why?</p>
+			  <p>When I learned how to use CSS. I didn't know how to add the CSS to the HTML when learning how to make a website, so when I learned how to add it I was pretty proud of myself. Another thing I was proud of was when I made my first website which was the fictional character. For never making a website before I thought I did a pretty good job.<p>
+			  
+			  <p>Provide an example of a tough situation or barrier you handled well in this course and the key strengths you relied on.</p>
+			  <p>Learning how to make a multiple page website. I had a hard time trying to add different pages to the website I forgot how to add them and had to look  it up which was not helpful at all so I had to figure it out myself. I did figure it out which made me feel so much better and less stressed. After that, the website was pretty easy to make.</p>
+			  
+			  <p>If you could do anything in this course over again, what, if anything, would you change?</p>
+			  <p>I would love to do my bio website over again. I learned so many more things in scripting that I would love to add in my bio website like adding multiple pages instead of just having one page.</p>
+			  
+			  <p>What actions/behaviours should you start doing that would help you in future courses?</p>
+			  <p>I should stop being afraid to ask questions if I don't understand something. And start talking to my classmates more so I can make some more friends.</p>
+			  </div>
+		  </div>
+		</div>
+	</div>
+	</section>
+
+    <footer class="text-white py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+					<h5>Hope you had fun!</h5>
+					<p>created by:</p>
+					<p>Maggie (Passey) Moss</p>
+					<p>Copyright &copy; 2022</p>
+					<a href="https://spookybvb.github.io/Mybiowebsite/Mysite/">My bio website</a>
+                </div>
+				</div>
+            </div>
+    </footer>
+
+    <script src="js/avatar.js"></script>
+    
+</body>
+</html>
+
+
+
